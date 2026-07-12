@@ -1,4 +1,4 @@
-# 🧬 Federated Genetic Algorithm Test Impact Analysis (TIA) Optimizer
+# 🧬 SmartTest: Federated Genetic Algorithm Test Impact Analysis (TIA) Optimizer
 
 > **Evolve your CI pipeline** — An intelligent test optimization system that uses Genetic Algorithms to select the minimum set of tests needed when you change code, reducing CI pipeline times by up to 95%.
 
