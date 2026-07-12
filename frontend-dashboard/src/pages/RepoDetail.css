@@ -1,0 +1,358 @@
+/* ============================================================
+   RepoDetail Page Styles
+   ============================================================ */
+
+.repo-detail-page {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: calc(100vh - 70px);
+}
+
+/* Header */
+.repo-header {
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--accent-cyan, #00d4ff);
+}
+
+.repo-title-section {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.repo-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(139, 92, 246, 0.2));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00d4ff;
+}
+
+.repo-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.repo-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.repo-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.meta-divider {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* Stats Grid */
+.repo-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.repo-stat-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.repo-stat-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.repo-stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.repo-stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.repo-stat-value {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.repo-stat-label {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.15rem;
+}
+
+/* Chart Card */
+.repo-chart-card {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 0.35rem 0;
+}
+
+.section-subtitle {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.85rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.chart-container {
+  width: 100%;
+}
+
+.repo-chart-tooltip {
+  background: rgba(15, 15, 35, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
+}
+
+.repo-chart-tooltip .tooltip-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+/* Table */
+.table-container {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.data-table td {
+  padding: 0.75rem 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.data-table tbody tr {
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.data-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.data-table tbody tr.selected-row {
+  background: rgba(0, 212, 255, 0.06);
+  border-left: 3px solid #00d4ff;
+}
+
+.run-number {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.8rem;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.test-count-badge {
+  background: rgba(0, 212, 255, 0.1);
+  color: #00d4ff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.optimized-time {
+  color: #00ff88 !important;
+  font-weight: 600;
+}
+
+.time-saved-badge {
+  background: rgba(0, 255, 136, 0.1);
+  color: #00ff88;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-badge.success {
+  background: rgba(0, 255, 136, 0.1);
+  color: #00ff88;
+}
+
+.status-badge.failed {
+  background: rgba(255, 68, 102, 0.1);
+  color: #ff4466;
+}
+
+/* Run Detail Panel */
+.run-detail-panel {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.run-detail-panel h3 {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.run-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.run-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.detail-label {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.detail-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.mini-chart {
+  margin-top: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+
+.selected-tests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.test-tag {
+  background: rgba(139, 92, 246, 0.15);
+  color: #a78bfa;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .repo-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .run-detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .repo-detail-page {
+    padding: 1rem;
+  }
+  .repo-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .run-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}

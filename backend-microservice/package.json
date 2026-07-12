@@ -1,0 +1,27 @@
+{
+  "name": "tia-optimizer-backend",
+  "version": "1.0.0",
+  "description": "Stateless GA optimization microservice for Federated Test Impact Analysis",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "seed": "node src/seed.js",
+    "clean": "node src/clean.js",
+    "clean:all": "node src/clean.js --all"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "firebase-admin": "^13.4.0",
+    "helmet": "^8.1.0",
+    "uuid": "^11.1.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

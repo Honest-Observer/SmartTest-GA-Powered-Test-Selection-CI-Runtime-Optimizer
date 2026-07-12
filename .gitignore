@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Firebase Secrets & Configs
+serviceAccountKey.json
+firebase-debug.log
+.firebaserc
+firebase.json
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Secrets (DO NOT COMMIT THESE)
+*.pem
+*.key
+.smart-test/
+.smart-test-config/
+
+# Documentation
+Federated*.md
+
+# OS
+.DS_Store
+Thumbs.db
+

@@ -1,0 +1,149 @@
+.api-key-manager {
+  max-width: 680px;
+}
+
+.akm-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.akm-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--accent-amber-dim);
+  color: var(--accent-amber);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.akm-title {
+  font-size: var(--font-lg);
+  font-weight: 700;
+}
+
+.akm-subtitle {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.akm-key-display {
+  position: relative;
+}
+
+.akm-key-box {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+}
+
+.akm-key-value {
+  flex: 1;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: var(--font-sm);
+  color: var(--accent-amber);
+  word-break: break-all;
+}
+
+.akm-key-actions {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.akm-copied-toast,
+.akm-generated-toast {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--font-xs);
+  font-weight: 600;
+  color: var(--accent-green);
+  margin-top: var(--space-xs);
+  animation: fadeIn 0.2s ease;
+}
+
+.spinning {
+  animation: spin 0.8s linear infinite;
+}
+
+/* Instructions */
+.akm-instructions {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--glass-border);
+}
+
+.akm-instructions-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-base);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.akm-instructions-text {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.akm-instructions-note {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  margin-top: var(--space-md);
+}
+
+.akm-instructions-note code {
+  color: var(--accent-cyan);
+  background: var(--accent-cyan-dim);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: var(--font-xs);
+}
+
+.akm-warning-toast {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-xs);
+  font-weight: 600;
+  color: var(--accent-amber);
+  background: var(--accent-amber-dim);
+  border: 1px solid rgba(255, 170, 0, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  margin-top: var(--space-sm);
+  animation: fadeIn 0.3s ease;
+}
+
+.akm-info-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-xs);
+  color: var(--text-tertiary);
+  margin-top: var(--space-sm);
+}
+
+.akm-error {
+  color: var(--accent-red);
+  font-size: var(--font-sm);
+  margin-top: var(--space-sm);
+}
+
+.akm-revoke-note {
+  font-size: var(--font-xs);
+  color: var(--text-tertiary);
+  margin-top: var(--space-xs);
+}

@@ -1,0 +1,26 @@
+{
+  "name": "smart-test-tia",
+  "version": "1.0.0",
+  "description": "Federated Genetic Algorithm Test Impact Analysis CLI - Optimize your CI test suite",
+  "type": "module",
+  "bin": {
+    "smart-test": "./bin/smart-test.js"
+  },
+  "main": "bin/smart-test.js",
+  "scripts": {
+    "start": "node bin/smart-test.js"
+  },
+  "keywords": [
+    "testing",
+    "ci",
+    "optimization",
+    "genetic-algorithm",
+    "test-impact-analysis",
+    "tia"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
